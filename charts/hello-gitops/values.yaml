@@ -1,5 +1,5 @@
 # Cambiar de 2 a 3 replicas durante la prueba GitOps; revertir el commit para volver a 2.
-replicaCount: 2
+replicaCount: 3
 image:
   repository: nginx
   tag: "1.29-alpine"
