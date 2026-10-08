@@ -1,0 +1,19 @@
+# Cambiar de 2 a 3 replicas durante la prueba GitOps; revertir el commit para volver a 2.
+replicaCount: 2
+image:
+  repository: nginx
+  tag: "1.29-alpine"
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 80
+page:
+  title: "Kubernetes + Helm + Argo CD"
+  message: "Version inicial gestionada por GitOps"
+resources:
+  requests:
+    cpu: 30m
+    memory: 48Mi
+  limits:
+    cpu: 250m
+    memory: 128Mi

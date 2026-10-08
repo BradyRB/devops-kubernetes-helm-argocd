@@ -1,0 +1,7 @@
+*.zip
+*.log
+*.tmp
+.runtime/
+evidencias/
+*.kubeconfig
+*.secret

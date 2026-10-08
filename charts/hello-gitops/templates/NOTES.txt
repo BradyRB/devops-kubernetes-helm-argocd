@@ -1,0 +1,4 @@
+La aplicacion fue instalada en {{ .Release.Namespace }}.
+Acceso local temporal:
+kubectl -n {{ .Release.Namespace }} port-forward svc/{{ include "hello-gitops.fullname" . }} 8092:80
+Navegar a http://localhost:8092
